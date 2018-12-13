@@ -46,7 +46,7 @@
            		str='';
 			document.getElementById('table_users').innerHTML='';
            	result.forEach(function(item, i, arr) {
-           		str="<tr><th>"+(i+1)+"</th><th>"+item['login']+"</th><th>"+item['fname']+"</th><th>"+item['lname']+"</th><th>"+item['role']+"</th><th><img width='100' height='70'src='"+item['img']+"'></th><th><button value='"+item['id']+"' onClick='see_profile(this.value)'>Посмотреть</button>";
+           		str="<tr><th>"+(i+1)+"</th><th>"+item['login']+"</th><th>"+item['fname']+"</th><th>"+item['lname']+"</th><th>"+item['role']+"</th><th><button value='"+item['id']+"' onClick='see_profile(this.value)'>Посмотреть</button>";
            		if (!role.localeCompare("admin")) {
            			str+="<p><button value='"+item['id']+"' onClick='edit_profile(this.value)'>Редактировать</button></p><p><button value='"+item['id']+"' onClick='delete_profile(this.value)'>Удалить</button></p>"
            		}

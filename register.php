@@ -44,7 +44,7 @@
 </head>
 <body>
 	<p>
-		<center>
+		<left>
 			<form id="data" method="post" enctype="multipart/form-data">
 				<p>
 					login
@@ -77,16 +77,12 @@
 					}
 				?>
 				<p>
-					Image
-					<input type="file" name="image" required>
-				</p>
-				<p>
 					
 					<input type="submit" id="register" value="Регистрация" name="register">
 					<input type="button" name="back" value="Выйти" onclick="location.href='index.php' ">
 				</p>
 			</form>
-		</center>
+		</left>
 		<div id="results"></div>
 	</p>
 </body>

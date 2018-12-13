@@ -122,14 +122,8 @@
 		$sql = "SELECT * FROM users WHERE id='$id'";
 		$result = mysqli_query($con,$sql);
 		$row=mysqli_fetch_assoc($result);
-			echo '<center>
+			echo '<left>
 			<form id="data" action="change_info.php" method="POST" enctype="multipart/form-data">
-			<p>
-				<img width="200" height="100" src="'.$row["img"].'">
-			</p>
-			<p>
-				<input type="file" name="image">
-			</p>
 			<p>
 			login
 			<input type="text" name="login" value="'.$row["login"].'">
@@ -156,7 +150,7 @@
 			<input type="submit" value="Редактировать профиль" name="edit">
 			</p>
 			</form>
-			</center>';
+			</left>';
 			mysqli_close($con);
 	}
 ?>
